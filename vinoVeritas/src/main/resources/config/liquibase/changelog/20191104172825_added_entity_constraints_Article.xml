@@ -6,7 +6,7 @@
     <!--
         Added the constraints for entity Article.
     -->
-    <changeSet id="20191104165709-2" author="jhipster">
+    <changeSet id="20191104172825-2" author="jhipster">
         
         <addForeignKeyConstraint baseColumnNames="company_id"
                                  baseTableName="article"
