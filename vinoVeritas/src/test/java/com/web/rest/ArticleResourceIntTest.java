@@ -105,7 +105,7 @@ public class ArticleResourceIntTest {
         Company company = CompanyResourceIntTest.createEntity(em);
         em.persist(company);
         em.flush();
-        article.setCompanyId(company);
+        article.setCompany(company);
         return article;
     }
 

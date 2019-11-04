@@ -11,10 +11,10 @@ import org.mapstruct.*;
 @Mapper(componentModel = "spring", uses = {CompanyMapper.class})
 public interface ArticleMapper extends EntityMapper<ArticleDTO, Article> {
 
-    @Mapping(source = "companyId.id", target = "companyIdId")
+    @Mapping(source = "company.id", target = "companyId")
     ArticleDTO toDto(Article article);
 
-    @Mapping(source = "companyIdId", target = "companyId")
+    @Mapping(source = "companyId", target = "company")
     Article toEntity(ArticleDTO articleDTO);
 
     default Article fromId(Long id) {

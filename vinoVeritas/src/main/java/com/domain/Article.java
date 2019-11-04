@@ -36,7 +36,7 @@ public class Article implements Serializable {
     @ManyToOne(optional = false)
     @NotNull
     @JsonIgnoreProperties("")
-    private Company companyId;
+    private Company company;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -86,17 +86,17 @@ public class Article implements Serializable {
         this.price = price;
     }
 
-    public Company getCompanyId() {
-        return companyId;
+    public Company getCompany() {
+        return company;
     }
 
-    public Article companyId(Company company) {
-        this.companyId = company;
+    public Article company(Company company) {
+        this.company = company;
         return this;
     }
 
-    public void setCompanyId(Company company) {
-        this.companyId = company;
+    public void setCompany(Company company) {
+        this.company = company;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

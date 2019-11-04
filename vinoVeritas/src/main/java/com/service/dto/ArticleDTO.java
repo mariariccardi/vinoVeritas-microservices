@@ -20,7 +20,7 @@ public class ArticleDTO implements Serializable {
     @NotNull
     private Float price;
 
-    private Long companyIdId;
+    private Long companyId;
 
     public Long getId() {
         return id;
@@ -54,12 +54,12 @@ public class ArticleDTO implements Serializable {
         this.price = price;
     }
 
-    public Long getCompanyIdId() {
-        return companyIdId;
+    public Long getCompanyId() {
+        return companyId;
     }
 
-    public void setCompanyIdId(Long companyId) {
-        this.companyIdId = companyId;
+    public void setCompanyId(Long companyId) {
+        this.companyId = companyId;
     }
 
     @Override
@@ -90,7 +90,7 @@ public class ArticleDTO implements Serializable {
             ", name='" + getName() + "'" +
             ", year=" + getYear() +
             ", price=" + getPrice() +
-            ", companyId=" + getCompanyIdId() +
+            ", company=" + getCompanyId() +
             "}";
     }
 }

@@ -6,11 +6,11 @@
     <!--
         Added the constraints for entity Article.
     -->
-    <changeSet id="20191104092940-2" author="jhipster">
+    <changeSet id="20191104165709-2" author="jhipster">
         
-        <addForeignKeyConstraint baseColumnNames="company_id_id"
+        <addForeignKeyConstraint baseColumnNames="company_id"
                                  baseTableName="article"
-                                 constraintName="fk_article_company_id_id"
+                                 constraintName="fk_article_company_id"
                                  referencedColumnNames="id"
                                  referencedTableName="company"/>
 
