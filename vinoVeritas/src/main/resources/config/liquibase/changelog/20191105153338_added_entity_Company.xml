@@ -15,10 +15,10 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
 
     <!--
-        Added the entity Article.
+        Added the entity Company.
     -->
-    <changeSet id="20191104172825-1" author="jhipster">
-        <createTable tableName="article">
+    <changeSet id="20191105153338-1" author="jhipster">
+        <createTable tableName="company">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -26,15 +26,11 @@
                 <constraints nullable="false" />
             </column>
 
-            <column name="jhi_year" type="integer">
+            <column name="address" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
 
-            <column name="price" type="${floatType}">
-                <constraints nullable="false" />
-            </column>
-
-            <column name="company_id" type="bigint">
+            <column name="city" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
 
